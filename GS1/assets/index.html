@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Limpeza dos Oceanos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="script.js">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+        rel="stylesheet"
+        />
+
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Viagens</h1>
+        <form id="travelForm">
+            <label for="destination">Destino:</label>
+            <input type="text" id="destination" required>
+        
+            <label for="date">Data:</label>
+            <input type="date" id="date" required>
+        
+            <label for="description">Descrição:</label>
+            <textarea id="description" required></textarea>
+        
+            <button type="submit">Salvar</button>
+        </form>
+    
+        <h2>Consultar Viagens</h2>
+        <input type="text" id="searchInput" placeholder="Buscar por destino...">
+    
+        <ul id="travelList"></ul>
+        <div id="report"></div>
+
+    </div>
+    <script src="script.js"></script>
+    </body>
+    </html>
